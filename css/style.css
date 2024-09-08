@@ -1,0 +1,725 @@
+:root{
+    --TextColorYellow :#FFBB31;
+    --TextColorGray:#8B8B8B;
+    --LeftRightPadding: 0 50px;
+}
+
+
+
+.Navbar{
+    width: 100%;
+    height: 95px;
+    padding: var(--LeftRightPadding);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;  /*When I add this 2 lines the height of slide is reduce*/
+    top: 0;
+    z-index: 999;
+}
+
+.Nav-first-part{
+    display: flex;
+    gap: 2rem;
+    width: 65%;
+    align-items: center;
+    flex-shrink: 3;
+}
+
+.Navbar ul{
+    list-style: none;
+    margin-bottom: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.Navbar ul .Active{
+    color:var(--TextColorYellow) ;
+}
+
+.Navbar ul a{
+    text-decoration: none;
+    color:var(--TextColorGray) ;
+    font-weight: 700;
+}
+.Navbar ul a:hover{
+    color: var(--TextColorYellow);
+}
+
+.Nav-sec-part{
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8%;
+    flex-basis: 35%;
+}
+
+div.Contact{
+    border-right: 0.5px solid gray;
+    padding-right: 2.5rem;
+}
+div.Contact a {
+    text-decoration: none;
+    color: var(--TextColorGray);
+}
+
+div.Contact a p{
+    margin-bottom: 0;
+}
+.Social-logo{
+    display: flex;
+    gap: 1rem;
+}
+.Social-logo :nth-child(3):hover{
+    color: red;
+}
+.Social-logo :nth-child(4):hover{
+    color: red;
+    }
+.Social-logo a{
+    text-decoration: none;
+    color: var(--TextColorGray);
+}
+
+        /* Slider code start from here  */
+
+.Slider{
+    background-image: url('https://deothemes.com/envato/sedona/html/img/revolution/home-1/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95vw;
+    height: 85vh;
+    margin: auto;
+    margin-bottom:30px;
+    margin-top: 95px;
+    display: flex;
+    align-items: center;
+    /* padding-left: 30px; */
+}
+.Slider .Content{
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.Slider .Content h3{
+    font-size: 3rem;
+    position: relative;
+}
+/* .Slider .Content h3 span{
+    background-color: #FFBB31;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 20%;
+    left: 31.5%;
+} */
+.Slider .Content button{
+    background-color: var(--TextColorYellow);
+    width: 16%;
+    height: 8%;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.Slider .Arrow{
+    background-color: #2A2929;
+    opacity: 0.5;
+    width: 35px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+        /* Home page section 1 code is starting from here  */
+
+.Home-section-1{
+padding: var(--LeftRightPadding);
+display: flex;
+}
+
+.Home-section-1 .section-1-1{
+    padding-top: 8px;
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.Home-section-1 .section-1-1 h2{
+    font-size: 2.5rem;
+    line-height: 1.5rem;
+}
+
+.Home-section-1 .section-1-1 .Icons{
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+    font-size: 1.2rem;
+} 
+.Home-section-1 .section-1-1 .Icons .Icon1,.Icon2,.Icon3{
+    text-align: center;
+}
+.Home-section-1 .section-1-1 .Icons .Icon1 i,
+.Home-section-1 .section-1-1 .Icons .Icon2 i,
+.Home-section-1 .section-1-1 .Icons .Icon3 i{
+    font-size: 3rem;
+}
+.Home-section-1 .section-1-2{
+    width: 45vw;
+    height: 70vh;
+    background: url('https://deothemes.com/envato/sedona/html/img/intro/1.jpg') no-repeat;
+    
+}
+        /* Home page section 2 code is starting from here  */
+
+.Home-section-2{
+    padding: var(--LeftRightPadding);
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+ 
+}
+.Home-section-2 .section-2-1 ul{
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding-left: 0;
+  margin-top: 2.5rem;
+}
+.Home-section-2 .section-2-1 ul .Active{
+    color:var(--TextColorYellow) ;
+    border-bottom: 2px solid var(--TextColorYellow);
+}
+.Home-section-2 .section-2-1 ul a{
+    text-decoration: none;
+    color:var(--TextColorGray) ;
+    font-weight: 700;
+} 
+.Home-section-2 .section-2-1 ul a:hover{
+    color: var(--TextColorYellow);
+    border-bottom: 2px solid var(--TextColorYellow);
+}
+.Home-section-2 .section-2-2{
+    margin-top: 3rem;
+    display: flex;
+    gap: 3rem;
+}
+.Home-section-2 .section-2-2 .Images{
+    width: 30%;
+    height: 45vh;
+    background: url('https://deothemes.com/envato/sedona/html/img/portfolio/masonry/1.jpg'), no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.Home-section-2 .section-2-2 .Image1:hover :first-child{
+    opacity: 0.8;
+}
+.Home-section-2 .section-2-2 .Image2:hover :first-child{
+    opacity: 0.8;
+}
+.Home-section-2 .section-2-2 .Images .Shadow {
+    transition: opacity 0.5s ease;
+}
+.Home-section-2 .section-2-2 .Image2{
+    background: url('https://deothemes.com/envato/sedona/html/img/portfolio/masonry/2.jpg'), no-repeat;
+    background-size: cover;
+}
+.Home-section-2 .section-2-2 .Image-3-1{
+    width: 80%;
+    height: 45%;
+    background: url('https://deothemes.com/envato/sedona/html/img/portfolio/masonry/3.jpg'), no-repeat;
+    background-size: cover;
+}
+.Home-section-2 .section-2-2 .Image-3-1:hover :first-child{
+    opacity: 0.8;
+}
+.Home-section-2 .section-2-2 .Image-3-2{
+    background-image: url("https://deothemes.com/envato/sedona/html/img/portfolio/masonry/4.jpg");
+}
+.Home-section-2 .section-2-2 .Image3{
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.Home-section-2 .section-2-2 .Images .Shadow{
+    background-color: gray;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0px;
+    padding-left: 15px;
+
+} 
+
+        /* Home page section 3 code is starting from here  */
+
+.Home-section-3{
+    background-color: #F9F9F9;
+    width: 90vw;
+    cursor: default;
+    height: 90vh;
+    margin: auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.Home-section-3 .section-3-1{
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url('https://deothemes.com/envato/sedona/html/img/testimonials/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80%;
+}
+.Home-section-3 .section-3-1 .Graph1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Home-section-3 .section-3-1 .Graph1 h2{
+    color: white;
+    font-size: 2.5rem;
+}
+.Home-section-3 .section-3-1 .Graph1 p{
+    color: var(--TextColorGray);
+    font-size: 5rem;
+}
+.Home-section-3 .section-3-1 .Graph1 .hd1{
+    color: #FFBB31;
+    font-size: 1.5rem;
+}
+.Home-section-3 .section-3-1 .section-3-1-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Home-section-3 .section-3-1 .section-3-1-1 i{
+    color: var(--TextColorGray);
+    font-size: 1.5rem;
+}
+
+.Home-section-3 .section-3-1 .section-3-1-1 i:hover{
+    color: white;
+    cursor: pointer;
+}
+.Home-section-3 .section-3-1 .Graph2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    color: var(--TextColorGray);
+}
+.Home-section-3 .section-3-1 .Graph2 .hd2{
+    color: white;
+}
+.Home-section-3 .section-3-1 .Graph2 span{
+    color: var(--TextColorYellow);
+}
+.Home-section-3 .section-3-2{
+    display: flex;
+    justify-content: space-around;
+}
+
+    /* Home page section 4 code is starting from here  */
+
+.Home-section-4{
+    height: 90vh;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+.Home-section-4 .section-4-1{
+    width: 22%;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+.Home-section-4 .section-4-1 h2{
+    color: var(--TextColorYellow);
+    font-size: 1rem;
+}
+.Home-section-4 .section-4-1 h3{
+    font-size: 2.5rem;
+}
+.Home-section-4 .section-4-1 p{
+    color: var(--TextColorGray);
+}
+.Home-section-4 .section-4-1 .Card{
+    background-color: var(--TextColorYellow);
+    border-radius: 15px;
+    padding: 10px 0;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.Home-section-4 .section-4-1 .Card p{
+    color: black;
+}
+.Home-section-4 .section-4-1 .Card i{
+    font-size: 2.5rem;
+}
+.Home-section-4 .section-4-2{
+    width: 50%;
+    display: flex;
+    gap: 10%;
+    flex-wrap: wrap;
+}
+.Home-section-4 .section-4-2 .Card{
+    width: 45%;
+}
+.Home-section-4 .section-4-2 .Card h3{
+    font-size: 1.5rem;
+}
+.Home-section-4 .section-4-2 .Card h3:hover{
+    color: var(--TextColorYellow);
+    cursor: pointer;
+}
+.Home-section-4 .section-4-2 .Card p{
+    margin-top: 1rem;
+}
+.Home-section-4 .section-4-2 .third{
+    width: 90%;
+    margin: auto;
+    font-size: 1rem;
+}
+.Home-section-4 .section-4-2 .third p{
+    color: var(--TextColorGray);
+}
+.Home-section-4 .section-4-2 .third p:hover{
+    color: black;
+    cursor: pointer;
+}
+.Home-section-4 .section-4-2 .third span{
+    background-color: var(--TextColorGray);
+    color: white;
+    margin-right: 1rem;
+    display: inline-block;
+    text-align: center;
+    width: 25px;
+    border-radius: 50%;
+  
+}
+
+    /* Footer Code is start from here  */
+
+.Footer{
+    padding: var(--LeftRightPadding);
+}
+.Footer-main{
+    background-image: url('https://deothemes.com/envato/sedona/html/img/footer/1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4rem;
+    margin-bottom: 1px ;
+}
+.Footer ul{
+    list-style: none;
+}
+.Footer ul a{
+    text-decoration: none;
+    color: var(--TextColorGray);
+    line-height: 2.5rem;
+}
+.Footer ul a:hover{
+    color: var(--TextColorYellow);
+    cursor: pointer; 
+}
+.Footer .Footer-main .Social-logo i:hover{
+color: var(--TextColorYellow);
+}
+
+
+            /* Contact file code start from here  */
+
+.Conslider{
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.25)),url('https://deothemes.com/envato/sedona/html/img/page-title/contact.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 85vw;
+    margin: auto;
+    padding:var(--LeftRightPadding);
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Contact-section-1{
+    display: flex;
+    justify-content: space-around;
+}
+.Contact-section-1 .section-1-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20%;
+    height: 60vh;
+}
+.Contact-section-1 .section-1-1 h3{
+    color: black;
+    font-size: 1.5rem;
+}
+.Contact-section-1 .section-1-1 p{
+    color: var(--TextColorGray);
+    line-height: 0.5rem;
+}
+.Contact-section-1 .section-1-2{
+    color: var(--TextColorGray);
+    font-size: 1.5rem;
+}
+.Contact-section-1 .section-1-2 h2{
+    color: black;
+    font-size: 2.5rem;
+}
+.Contact-section-1 .section-1-2 .form{
+    padding-top: 3rem;
+    height: 130%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.Contact-section-1 .section-1-2 .form input::placeholder{
+    color: black;
+}
+.Contact-section-1 .section-1-2 .form input:focus{
+    border-bottom: 1px solid var(--TextColorYellow);
+}
+.Contact-section-1 .section-1-2 .form .Inputs input:focus{
+    border-bottom: 1px solid var(--TextColorYellow);
+}
+.Contact-section-1 .section-1-2 .form input:focus::placeholder {
+    color: var(--TextColorYellow);
+    /* padding-top: -10rem;  it's not working on psedu classes*/ 
+}
+.Contact-section-1 .section-1-2 .form .Inputs{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.Contact-section-1 .section-1-2 .form .Inputs input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--TextColorGray);
+    flex: 1; /* This will make both input fields take equal width */
+    
+}
+.Contact-section-1 .section-1-2 .form .Inp3{
+    flex-grow: 2;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--TextColorGray);
+}
+
+.Contact-section-1 .section-1-2 .form .Inp4{
+    flex-grow: 3;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--TextColorGray);
+}
+.Contact-section-1 .section-1-2 .form .btn{
+    background-color: var(--TextColorYellow);
+    border: none;
+    width: 35%;
+    height: 12%;
+    font-weight: 700;
+    color: black;
+}
+.Contact-section-1 .section-1-2 .form .btn:hover{
+    background-color:rgba(255, 187, 49,0.95);
+}
+
+.Contact-Map{
+    margin-top: 33%;
+    margin-bottom: 2%;
+    position: relative;
+    left: 50%;
+}
+
+
+        /* About file code start from here  */
+
+
+
+.About-slider{
+    background-image: linear-gradient(rgba(209, 110, 110, 0.1),rgba(231, 122, 122, 0.25)),url('https://deothemes.com/envato/sedona/html/img/page-title/about.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 85vw;
+    margin: auto;
+    padding:var(--LeftRightPadding);
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+.About-slider p{
+    font-size: 1.3rem;
+    margin-top: -50px;
+}
+.About-section-1{
+    height: 100vh;
+}
+
+.About-section-1 .section-1-1{
+    width: 65%;
+    margin: auto;
+    font-size: 2.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.About-section-1 .section-1-1 p{
+    color: var(--TextColorGray);
+    font-size: 1.2rem;
+}
+.About-section-1 .section-1-2{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.About-section-1 .section-1-2 .Card{
+    width: 25%;
+    height: 35vh;
+}
+.About-section-1 .section-1-2 .Card .Bgimage{
+   width: 100%;
+   height: 100%;
+   background-image: url('https://deothemes.com/envato/sedona/html/img/services/v-2/1.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.About-section-1 .section-1-2 .Card .image2{
+    background-image: url('https://deothemes.com/envato/sedona/html/img/services/v-2/2.jpg');
+}
+.About-section-1 .section-1-2 .Card .image3{
+    background-image: url('https://deothemes.com/envato/sedona/html/img/services/v-2/3.jpg');
+}
+.About-section-1 .section-1-2 .Card .Bgtext{
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 100;
+    bottom: 40%;
+    left: 20%;
+    padding-left: 2.5rem;
+    line-height: 1rem;
+    background-color: white;
+}
+.About-section-1 .section-1-2 .Card .Bgtext p{
+    color: var(--TextColorGray);
+    font-size: 1rem;
+    line-height: 0.6rem;
+}
+.About-section-1 .section-1-2 .Card .Bgtext p span{
+    color: var(--TextColorYellow);
+    font-weight: 700;
+    margin-right: 15px;
+}
+.About-section-2{
+    padding: var(--LeftRightPadding);
+    height: 100vh;
+
+}
+.About-section-2 .section-2-1{
+    border: none;
+    border-top: 5px solid var(--TextColorGray);
+    border-bottom: 5px solid var(--TextColorGray);
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.About-section-2 .section-2-1 .count{
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 1px;
+    width: 25%;
+}
+.About-section-2 .section-2-1 .count p{
+    font-size: 1rem;
+    line-height: 1px;
+}
+.About-section-2 .section-2-2{
+    margin-top: 12%;
+    margin-bottom: 15%;
+    width: 100%;
+    display: flex;
+    gap: 10%;
+}
+.About-section-2 .section-2-2 .Blogs{
+    width: 22%;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+.About-section-2 .section-2-2 .Blogs h2{
+    color: var(--TextColorYellow);
+    font-size: 1rem;
+}
+.About-section-2 .section-2-2 .Blogs h3{
+    font-size: 2.5rem;
+}
+.About-section-2 .section-2-2 .Blogs p{
+    color: var(--TextColorGray);
+}
+.About-section-2 .section-2-2 .section-2-2-1{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.About-section-2 .section-2-2 .section-2-2-1 .Cards{
+    width: 25%;
+}
+.About-section-2 .section-2-2 .section-2-2-1 .Cards .Bgpic{
+    background-image: url('https://deothemes.com/envato/sedona/html/img/team/1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100% ;
+    height: 60vh;
+}
+.About-section-2 .section-2-2 .section-2-2-1 .Cards .Bgpic2{
+    background-image: url('https://deothemes.com/envato/sedona/html/img/team/2.jpg');
+}
+.About-section-2 .section-2-2 .section-2-2-1 .Cards .Bgpic3{
+    background-image: url('https://deothemes.com/envato/sedona/html/img/team/3.jpg');
+}
+
+
+.About-section-2 .section-2-3{
+    height: 70vh;
+    background-color: #F9F9F9;
+}
